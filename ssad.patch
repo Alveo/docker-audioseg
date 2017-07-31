@@ -1,0 +1,13 @@
+--- audioseg-1.2.2/src/ssad.c	2017-07-31 14:55:31.000000000 +1000
++++ audioseg-1.2.2/src/ssad.c	2017-07-31 14:57:47.000000000 +1000
+@@ -732,10 +732,6 @@
+     case 'F':
+       if (strcasecmp(optarg, "pcm16") == 0)
+ 	format = SPRO_SIG_PCM16_FORMAT;
+-      else if (strcasecmp(optarg, "alaw") == 0)
+-	format = SPRO_SIG_ALAW_FORMAT;
+-      else if (strcasecmp(optarg, "ulaw") == 0)
+-	format = SPRO_SIG_ULAW_FORMAT;
+       else if (strcasecmp(optarg, "wave") == 0)
+ 	format = SPRO_SIG_WAVE_FORMAT;
+ #ifdef SPHERE
